@@ -6,7 +6,7 @@
 
 # Some User's Details. Please fill it with your own details.
 export KBUILD_BUILD_USER=Nsytechno
-export KBUILD_BUILD_HOST=StayXtreme
+export KBUILD_BUILD_HOST=Godvalley
 
 # Replace "legacy" with your own SSH Username in lowercase
 username=legacy
@@ -26,13 +26,13 @@ if [ "$use_ccache" = "yes" ];
 then
 echo -e ${blu}"CCACHE is enabled for this build"${txtrst}
 export USE_CCACHE=1
-export CCACHE_DIR=/home/ccache/$username
+export CCACHE_DIR=/home/ccache/nikhil
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 fi
 
 if [ "$use_ccache" = "clean" ];
 then
-export CCACHE_DIR=/home/ccache/$username
+export CCACHE_DIR=/home/ccache/nikhil
 ccache -C
 wait
 echo -e ${grn}"CCACHE Cleared"${txtrst};
@@ -49,4 +49,4 @@ fi
 # Build ROM
 . build/envsetup.sh
 lunch "$lunch_command"_"$device"-userdebug
-make "$target_command" -j8
+make "$target_command" -j16
