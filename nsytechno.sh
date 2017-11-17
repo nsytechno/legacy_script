@@ -2,7 +2,7 @@
 
 # Clone this script in your ROM Repo using following commands.
 # cd rom_repo
-# curl https://raw.githubusercontent.com/Rpingat/legacy_script/master/nsytechno.sh > script_build.sh
+# curl https://raw.githubusercontent.com/nsytechno/legacy_script/master/nsytechno.sh > script_build.sh
 
 # Some User's Details. Please fill it with your own details.
 export KBUILD_BUILD_USER=Nsytechno
