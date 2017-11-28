@@ -5,11 +5,11 @@
 # curl https://raw.githubusercontent.com/nsytechno/legacy_script/master/nsytechno.sh > script_build.sh
 
 # Some User's Details. Please fill it with your own details.
-export KBUILD_BUILD_USER=Nsytechno
-export KBUILD_BUILD_HOST=Godvalley
+export KBUILD_BUILD_USER=Abhay
+export KBUILD_BUILD_HOST=PoloniumBox
 
 # Replace "legacy" with your own SSH Username in lowercase
-username=legacy
+username=surajparmar6
 
 # Colors makes things beautiful
 export TERM=xterm
