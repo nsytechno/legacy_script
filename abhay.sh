@@ -26,13 +26,13 @@ if [ "$use_ccache" = "yes" ];
 then
 echo -e ${blu}"CCACHE is enabled for this build"${txtrst}
 export USE_CCACHE=1
-export CCACHE_DIR=/home/ccache/nikhil
+export CCACHE_DIR=/home/ccache/surajparmar6
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 fi
 
 if [ "$use_ccache" = "clean" ];
 then
-export CCACHE_DIR=/home/ccache/nikhil
+export CCACHE_DIR=/home/ccache/surajparmar6
 ccache -C
 wait
 echo -e ${grn}"CCACHE Cleared"${txtrst};
