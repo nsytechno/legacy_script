@@ -2,11 +2,11 @@
 
 # Clone this script in your ROM Repo using following commands.
 # cd rom_repo
-# curl https://raw.githubusercontent.com/nsytechno/legacy_script/master/nsytechno.sh > script_build.sh
+# curl https://raw.githubusercontent.com/nsytechno/scripts/master/nsytechno.sh > script_build.sh
 
 # Some User's Details. Please fill it with your own details.
 export KBUILD_BUILD_USER=Nsytechno
-export KBUILD_BUILD_HOST=Godvalley
+export KBUILD_BUILD_HOST=GodValley
 
 # Replace "legacy" with your own SSH Username in lowercase
 username=legacy
