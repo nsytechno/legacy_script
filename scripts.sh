@@ -30,5 +30,22 @@ prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
 # Build ROM
 . build/envsetup.sh
+
+# Colors for terminal output
+  BLDRED="\033[1m""\033[31m"
+  RST="\033[0m"
+
+# Do we want to build clean?
+  if(whiptail --title "Make clean??" --yesno "Would you like to build clean?" 30 70) then
+    echo -e ${BLDRED}"Building clean..."${RST}
+    sleep 3
+    make clean
+    clear
+  else
+    echo -e ${BLDRED}"Not building clean..."${RST}
+    sleep 3
+  fi
+
+
 lunch "$lunch_command"_"$device"-userdebug
 make bacon -j16
