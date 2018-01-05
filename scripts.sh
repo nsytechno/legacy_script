@@ -28,9 +28,6 @@ export PATH="/usr/lib/ccache/:$PATH"
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
 
-# Build ROM
-. build/envsetup.sh
-
 # Colors for terminal output
   BLDRED="\033[1m""\033[31m"
   RST="\033[0m"
@@ -47,5 +44,7 @@ prebuilts/misc/linux-x86/ccache/ccache -M 50G
   fi
 
 
+# Build ROM
+. build/envsetup.sh
 lunch "$lunch_command"_"$device"-userdebug
 make bacon -j16
